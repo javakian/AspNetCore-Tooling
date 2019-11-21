@@ -2,8 +2,22 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "CompilePackage",
+            "command": "dotnet",
+            "args": [
+              "build"
+            ],
+            "options": {
+              "cwd": "src/Razor/src/Microsoft.AspNetCore.Razor.VSCode/"
+            },
+            "problemMatcher": "$tsc-watch",
+            "presentation": {
+              "reveal": "silent"
+            }
+        },
+        {
             "label": "CompileLibrary",
-            "command": "npm",
+            "command": "dotnet",
             "args": [
                 "build"
             ],
@@ -33,9 +47,8 @@
         },
         {
             "label": "CompileExtension",
-            "command": "yarn",
+            "command": "dotnet",
             "args": [
-                "run",
                 "build"
             ],
             "options": {
@@ -51,9 +64,8 @@
         },
         {
             "label": "CompileUnitTests",
-            "command": "yarn",
+            "command": "dotnet",
             "args": [
-                "run",
                 "build"
             ],
             "options": {
@@ -66,9 +78,8 @@
         },
         {
             "label": "CompileFunctionalTest",
-            "command": "npm",
+            "command": "dotnet",
             "args": [
-                "run-script",
                 "build"
             ],
             "options": {
