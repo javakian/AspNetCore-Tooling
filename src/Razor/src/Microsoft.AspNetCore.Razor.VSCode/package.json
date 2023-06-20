@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "vscode-html-languageservice": "2.1.7",
-    "vscode-languageclient": "5.2.1"
+    "vscode-languageclient": "7.0.0"
   },
   "main": "./dist/extension.js",
   "types": "./dist/extension.d.ts",
