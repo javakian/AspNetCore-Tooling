@@ -175,7 +175,7 @@
     },
     "dependencies": {
         "microsoft.aspnetcore.razor.vscode": "link:../Microsoft.AspNetCore.Razor.VSCode",
-        "diff": ">=3.5.0",
+        "diff": ">=8.0.3",
         "vscode": "1.1.33"
     }
 }
